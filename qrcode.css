@@ -1,4 +1,4 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; margin-top: 1rem; }
 .attribution a { color: hsl(228, 45%, 44%); }
 html {
     display: flex;
@@ -15,6 +15,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+@media (max-height: 500px) {
+    html, body {
+        height: 120vh;
+    }
 }
 p {
     font-family: 'Outfit', sans-serif;
